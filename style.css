@@ -95,7 +95,7 @@ body {
 .skill-item:hover {
   background: rgba(100, 255, 218, 0.2);
   border-color: rgba(100, 255, 218, 0.7);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
   color: #64ffda;
 }
