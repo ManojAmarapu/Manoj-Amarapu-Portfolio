@@ -118,7 +118,7 @@ footer {
   text-align: center;
   padding: 2rem;
   color: #8892b0;
-  background: var(--bg-primary);
+  background: #0c0c0c;
   border-top: 1px solid rgba(100, 255, 218, 0.1);
 }
 
@@ -430,50 +430,7 @@ section {
   margin-right: auto;
 }
 
-.education {
-  background: rgba(100, 255, 218, 0.07);
-  padding: 2rem;
-  border-radius: 15px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
-  margin-bottom: 2rem;
-}
-
-.education h3 {
-  color: #64ffda;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.education p {
-  color: #a8a8a8;
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 0.75rem;
-}
-
-.skill-item {
-  background: rgba(100, 255, 218, 0.08);
-  padding: 0.75rem;
-  border-radius: 10px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(100, 255, 218, 0.2);
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: default;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-  background: rgba(100, 255, 218, 0.18);
-  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-}
+/* Note: .skill-item and .education are defined above in the Skills/Education section */
 
 /* ===== Projects section ===== */
 .projects-grid {
