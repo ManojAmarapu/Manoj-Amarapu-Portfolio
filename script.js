@@ -88,28 +88,27 @@ document.querySelectorAll("section").forEach((section) => {
 });
 
 // ===== Scroll-triggered entry animations =====
-document.addEventListener("DOMContentLoaded", () => {
-  const animatedItems = document.querySelectorAll(
-    ".fade-up, .slide-left, .slide-right, .scale-in",
-  );
+// Script is loaded at end of body so DOM is already ready — no DOMContentLoaded needed
+const animatedItems = document.querySelectorAll(
+  ".fade-up, .slide-left, .slide-right, .scale-in",
+);
 
-  const animationObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const delay = entry.target.dataset.delay || "0s";
-          entry.target.style.animationDelay = delay;
-          entry.target.classList.add("animate");
-          // Stop observing once animated
-          animationObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-  );
+const animationObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const delay = entry.target.dataset.delay || "0s";
+        entry.target.style.animationDelay = delay;
+        entry.target.classList.add("animate");
+        // Stop observing once animated
+        animationObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+);
 
-  animatedItems.forEach((item) => animationObserver.observe(item));
-});
+animatedItems.forEach((item) => animationObserver.observe(item));
 
 // ===== Initialize =====
 createParticles();
