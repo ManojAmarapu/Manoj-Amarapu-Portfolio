@@ -813,6 +813,13 @@ section {
     width: 100%;
   }
 
+  /* On mobile replace horizontal slides with vertical fade-up
+     to prevent translateX from breaking centering */
+  .animate.slide-left,
+  .animate.slide-right {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
