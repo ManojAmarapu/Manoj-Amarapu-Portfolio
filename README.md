@@ -6,7 +6,7 @@ This portfolio reflects my work in Web Development, AI/ML, and Full-Stack Applic
 
 🚀 Live Demo
 
-🔗 (https://manoj-amarapu-portfolio.vercel.app)
+🔗 https://manoj-amarapu-portfolio.vercel.app
 
 ✨ Features
 🧑‍💻 Clean and modern UI design
@@ -63,8 +63,8 @@ Travel Journal 🌍
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
 📬 Contact
-📧 Email: (manojamarapu@gmail.com)
-💼 LinkedIn: (https://www.linkedin.com/in/manoj-amarapu)
+📧 Email: manojamarapu@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/manoj-amarapu
 🐙 GitHub: https://github.com/ManojAmarapu
 ⭐ Support
 
