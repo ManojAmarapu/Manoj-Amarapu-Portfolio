@@ -839,6 +839,10 @@ section {
     grid-template-columns: 1fr;
   }
 
+  #contact {
+    overflow-x: hidden;
+  }
+
   .projects-grid,
   .experience-grid,
   .achievements-grid {
