@@ -899,13 +899,13 @@ section {
     display: flex;
   }
 
-  /* Stack label above value on mobile so long text like college name wraps properly */
-  .info-item {
-    flex-direction: column;
-    gap: 0.2rem;
+  /* Keep label left / value right but allow long values like college name to wrap */
+  .info-label {
+    flex-shrink: 0;
   }
 
   .info-value {
-    text-align: left;
+    word-break: break-word;
+    text-align: right;
   }
 }
